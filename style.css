@@ -104,6 +104,10 @@ body{
     justify-content: center;
 }
 
+#close-icon{
+    display: none;
+}
+
 #navbar li{
     list-style: none;
     padding: 0 20px;  
@@ -117,6 +121,8 @@ body{
     color: #1a1a1a;
     transition: 0.2s ease;
 }
+
+
 
 #navbar li a:hover, 
 #navbar li a.active
@@ -135,6 +141,11 @@ body{
     left: 20px;
     
     position: absolute;
+}
+
+#mobile{
+    display: none;
+    
 }
 
 /* Hero Section */
@@ -458,3 +469,203 @@ body{
     border-radius: 4px;
     
 }
+
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("images/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+
+#newsletter h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#newsletter p {
+    font-size: 18px;
+    font-weight: 600;
+    color: #818ea0;
+}
+
+#newsletter p span{
+    color: #ffb427;
+}
+
+#newsletter .form{
+    display: flex;
+    width: 40%;
+}
+
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 17px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 3.125rem;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-links .col .follow{
+    margin: 20px 0;
+}
+
+.footer-links .col .follow .icon{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-links .col .follow i{
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+.footer-links .col .follow i:hover{
+    color: #088178;
+}
+
+footer .footer-logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 17px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #465b52;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+footer a:hover{
+    color: #088178;
+}
+footer .install img{
+    margin: 10px 0 15px;
+    cursor: pointer;
+}
+
+
+footer .install .row img{  
+    border: 1px solid #088178;
+    border-radius: 5px;
+}
+
+footer .follow i:hover{
+    color: #088178;
+}
+
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+
+#mobile a{
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#mobile i{
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Start Media Query */
+
+@media (max-width:799px) {
+    #navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+        position: fixed;
+        top: 0;
+        right: -350px;
+        height: 100vh;
+        width: 300px;
+
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+
+        padding: 80px 0 0 10px;
+
+        transition: 0.3s;
+
+    }
+
+    #navbar.active{
+        right: 0px;
+    }
+
+    #navbar li{
+        margin-bottom: 27px;
+    }
+
+    #mobile{
+        display: flex;
+    }
+
+    #close-icon{
+        display: flex;
+        font-size: 24px;
+    }
+    
+}
+
+
+
+
+
